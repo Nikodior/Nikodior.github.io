@@ -28,7 +28,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -54,6 +54,26 @@ body {
   min-width: 350px;
   overflow: auto;
   margin: 10px;
+}
+
+.h1-mobile {
+	display: none;
+}
+
+.h2-header {
+  margin-left: 13px;
+}
+
+.h3-header {
+  margin-left: 13px;
+}
+
+.p-header {
+  margin-left: 41px;
+}
+
+.list-class {
+  margin-left: 10px;
 }
 
 header {
@@ -102,6 +122,35 @@ code {
   display: inline;
 }
 
-@media screen and (max-width: 768px) {
-  /* Mobile styles go here */
+@media (max-width: 450px) {
+  .h1-mobile {
+    display: block;
+  }
+  .h1-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-wrapper {
+    background: var(--ctp-mocha-mantle);
+  }
+  .main-div {
+    box-shadow: none;
+  }
+  hr {
+    border-top: 3px solid var(--ctp-mocha-surface1);
+  }
+}
+
+@media (max-height: 650px) {
+  .h1-mobile {
+    display: none;
+  }
+  .h1-desktop {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
 }
