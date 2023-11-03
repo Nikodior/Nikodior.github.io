@@ -101,3 +101,7 @@ code {
   border-radius: 10px;
   display: inline;
 }
+
+@media screen and (max-width: 768px) {
+  /* Mobile styles go here */
+}
