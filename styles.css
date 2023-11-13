@@ -1,5 +1,6 @@
 :root {
   /* Catppuccin Mocha */
+  /* Color variables for the Catppuccin Mocha color scheme */
   --ctp-mocha-rosewater: #f5e0dc;
   --ctp-mocha-flamingo: #f2cdcd;
   --ctp-mocha-pink: #f5c2e7;
@@ -28,7 +29,9 @@
 }
 
 body {
-  font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;;
+  /* Body styles for the entire page */
+  font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
+    source-sans-pro, sans-serif;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -37,6 +40,7 @@ body {
 }
 
 .main-wrapper {
+  /* Main content wrapper styles */
   min-height: 100%;
   display: flex;
   justify-content: center;
@@ -46,6 +50,7 @@ body {
 }
 
 .main-div {
+  /* Styles for the main content container */
   box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   background: var(--ctp-mocha-mantle);
@@ -56,8 +61,9 @@ body {
   margin: 10px;
 }
 
+/* Header styles for different heading levels */
 .h1-mobile {
-	display: none;
+  display: none;
 }
 
 .h2-header {
@@ -72,6 +78,7 @@ body {
   margin-left: 18px;
 }
 
+/* Paragraph and list item styles */
 .p-header {
   margin-left: 41px;
 }
@@ -80,6 +87,7 @@ body {
   margin-left: 14px;
 }
 
+/* Header styles for the main content container */
 header {
   text-align: center;
   line-height: 12px;
@@ -87,6 +95,7 @@ header {
 }
 
 hr {
+  /* Horizontal rule styles */
   border-top: 4px solid var(--ctp-mocha-overlay1);
   border-left: none;
   border-right: none;
@@ -94,6 +103,7 @@ hr {
   border-radius: 3px;
 }
 
+/* Link styles for unvisited, visited, hover, and active links */
 a:link {
   color: var(--ctp-mocha-sky);
 }
@@ -111,6 +121,7 @@ a:active {
 }
 
 .emoji {
+  /* Styles for emoji images */
   height: 2em;
   width: 2em;
   vertical-align: middle;
@@ -118,6 +129,7 @@ a:active {
 }
 
 code {
+  /* Styles for inline code elements */
   background-color: var(--ctp-mocha-surface0);
   padding: 1px;
   padding-left: 7px;
@@ -126,6 +138,7 @@ code {
   display: inline;
 }
 
+/* Media queries for responsive design */
 @media (max-width: 450px) {
   .h1-mobile {
     display: block;
